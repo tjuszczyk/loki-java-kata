@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+}
+mainClassName = 'uk.sky.loki.starter.ConsoleRunner'
+
+run {
+//    args = ['Tomasz']
+//    environment = [
+//            "name":'Chris'
+//    ]
+//    systemProperty("name", 'Emma')
+}
