@@ -1,0 +1,8 @@
+plugins {
+    id 'application'
+}
+mainClassName = 'uk.sky.loki.starter.ConsoleRunner'
+
+run {
+    
+}
