@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uk.sky.loki.starter.InputNameAnalyserTest" tests="4" skipped="1" failures="0" errors="0" timestamp="2019-01-29T14:56:52" hostname="OSTML0231492" time="0.009">
+  <properties/>
+  <testcase name="shouldUseEnvironmentVarAsName()" classname="uk.sky.loki.starter.InputNameAnalyserTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="shouldUseFirstInputParamAsName()" classname="uk.sky.loki.starter.InputNameAnalyserTest" time="0.001"/>
+  <testcase name="shouldUseSystemParameterAsName()" classname="uk.sky.loki.starter.InputNameAnalyserTest" time="0.001"/>
+  <testcase name="shouldUseLokiAsDefault()" classname="uk.sky.loki.starter.InputNameAnalyserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
