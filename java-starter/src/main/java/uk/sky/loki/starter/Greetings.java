@@ -1,32 +1,27 @@
 package uk.sky.loki.starter;
 
+import com.google.common.base.Preconditions;
+import org.checkerframework.checker.nullness.qual.NonNull;
+
 import java.io.IOException;
 import java.io.Writer;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Greetings {
 
-    public void greet(Writer writer, String name) throws IOException {
-        if (name == null || name.isEmpty()) {
-            name = "Loki";
-        }
-        writer.write("Hello " + name + "!");
-    }
+    public void greet(@NonNull Writer writer, @NonNull List<String> names) throws IOException {
 
-    public void greetMany(Writer writer, String[] names) throws IOException {
-        if (names == null || names.length == 0) {
-            names = new String[1];
-            names[0] = "Loki";
+        Preconditions.checkNotNull(names);
+        Preconditions.checkNotNull(writer);
+
+        if (names.size() == 0) {
+            names = Arrays.asList("Loki");
         }
 
-        String greetings = "";
+        String greetings = names.stream().collect(Collectors.joining(", "));
 
-        for(String name : names){
-            greetings += name + ", ";
-        }
-
-        greetings = greetings.substring(0, greetings.length() -2);
-        String sentence =  "Hello " + greetings + "!";
-
-        writer.write(sentence);
+        writer.write("Hello " + greetings + "!");
     }
 }

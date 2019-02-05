@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="uk.sky.loki.starter.GreetingsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-29T14:56:51" hostname="OSTML0231492" time="0.265">
-  <properties/>
-  <testcase name="greetingsShouldPrintGreetings()" classname="uk.sky.loki.starter.GreetingsTest" time="0.265"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
