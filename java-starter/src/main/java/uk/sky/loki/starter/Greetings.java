@@ -16,7 +16,7 @@ public class Greetings {
         Preconditions.checkNotNull(names);
         Preconditions.checkNotNull(writer);
 
-        if (names.size() == 0) {
+        if (names.isEmpty()) {
             names = Arrays.asList("Loki");
         }
 
