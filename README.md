@@ -118,7 +118,26 @@ TDD(!) Think how to make your code testable.
   - testing exceptions with fluent interface
   - Data Driven Testing with JUnit 5 Parameterised Tests
   
-## KATA 3 - Hello properties. Hello memory.
+## KATA 3 - Hello memory. Hello stack.
+
+### KATA 3.1 - StackOverflowException
+
+* Write recursive version of  Pascal’s Triangle values 
+* Call method pascal (n,k) with a value, which causes stack overflow
+* Play with JVM flag xss to allow bigger stack
+
+* **Bonus:** write non recursive version of the algorithm
+  
+### KATA 3.2 - Objects introduction, Data structures introduction
+  
+* Create classes BinaryTree and Node
+* Write stack version of dfs algorithm
+* Generise: Tree class and dfs for trees
+
+* **Bonus:** Create Graph class (Node and Edge classes as well). Write dfs algorithm for graph  
+  
+
+## KATA 4 - Hello properties. Hello memory.
 
 ### 3.1 - (CODE) Environment variables, system properties
 
