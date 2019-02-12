@@ -36,13 +36,13 @@ TDD(!) Think how to make your code testable.
 * **Bonus:** checkout lib doing commands processing (ex -person=Tomasz)
 * **Bonus:** http://codingdojo.org/kata/Args/ 
 
-### 1.3 - (GRADLE) Gradle build lifecycle, (java, application, shadow) plugins
+### 1.3 - (GRADLE) Gradle build tool - introduction
 
 * Gradle version and list all tasks
 * Configure wrapper task to use latest gradle 5.
 
 
-###Summary
+### Summary
 
 - Theory
   - JDK, JVM, JRE
