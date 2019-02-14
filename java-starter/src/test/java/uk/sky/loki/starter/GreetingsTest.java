@@ -56,6 +56,7 @@ class GreetingsTest {
         Assertions.assertThat(stringWriter.toString()).isEqualTo(expectedGreetingMessage);
     }
 
+
     private static Stream<Arguments> createGreetingsWithNames() {
         return Stream.of(
                 Arguments.of(Collections.emptyList(),"Hello Loki!"),
