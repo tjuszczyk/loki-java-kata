@@ -17,7 +17,7 @@ class PascalsTriangleTest {
         //n = the row
         //k = the number from the left
 
-        long actualValue = PascalTriangle.pascalsTriangle(n, k);
+        long actualValue = new PascalTriangle().pascalsTriangle(n, k);
         Assertions.assertThat(actualValue).isEqualTo(expectedValue);
     }
 
@@ -32,7 +32,7 @@ class PascalsTriangleTest {
 
         //then
         Assertions.assertThatThrownBy(
-                () -> PascalTriangle.pascalsTriangle(n, k)
+                () -> new PascalTriangle().pascalsTriangle(n, k)
         ).isInstanceOf(IllegalArgumentException.class);
     }
 
@@ -44,7 +44,7 @@ class PascalsTriangleTest {
 
         //then
         Assertions.assertThatThrownBy(
-                () -> PascalTriangle.pascalsTriangle(n, k)
+                () -> new PascalTriangle().pascalsTriangle(n, k)
         ).isInstanceOf(IllegalArgumentException.class);
     }
 

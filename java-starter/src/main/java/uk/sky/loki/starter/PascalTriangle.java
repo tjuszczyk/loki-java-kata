@@ -2,13 +2,13 @@ package uk.sky.loki.starter;
 
 public class PascalTriangle {
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         long triangle = pascalsTriangle(150, 100);
 
         System.out.println(triangle);
     }
 
-    public static long pascalsTriangle(int n, int k) {
+    public long pascalsTriangle(int n, int k) {
         if (k == 0 || k == n) {
             return 1;
         } else if (k < 0 || n < 0) {
@@ -16,7 +16,18 @@ public class PascalTriangle {
         } else if (k > n) {
             throw new IllegalArgumentException();
         } else {
-            return (pascalsTriangle(n - 1, k - 1) + pascalsTriangle(n - 1, k));
+            int division1 = calculateFactorial(n);
+            int division2 = calculateFactorial(k) * calculateFactorial(n-k);
+            return division1/division2;
         }
     }
+
+    private int calculateFactorial(int number){
+        int factorial = 1;
+        for (int i = 1; i <= number; i++){
+            factorial = factorial*i;
+        }
+        return factorial;
+    }
+
 }
