@@ -4,7 +4,6 @@ public class PascalTriangle {
 
     public void main(String[] args) {
         long triangle = pascalsTriangle(150, 100);
-
         System.out.println(triangle);
     }
 
@@ -16,9 +15,9 @@ public class PascalTriangle {
         } else if (k > n) {
             throw new IllegalArgumentException();
         } else {
-            int division1 = calculateFactorial(n);
-            int division2 = calculateFactorial(k) * calculateFactorial(n-k);
-            return division1/division2;
+            int numerator = calculateFactorial(n);
+            int denominator = calculateFactorial(k) * calculateFactorial(n-k);
+            return numerator/denominator;
         }
     }
 
@@ -29,5 +28,4 @@ public class PascalTriangle {
         }
         return factorial;
     }
-
 }
